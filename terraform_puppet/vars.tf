@@ -19,11 +19,41 @@ variable "password" {
   type        = string
 }
 
+// Variables para las redes y subredes existentes
+variable "network_name_private_1" {
+  description = "The name of the first private network"
+  type        = string
+}
+
+variable "subnet_name_private_1" {
+  description = "The name of the first private subnet"
+  type        = string
+}
+
+variable "network_name_private_2" {
+  description = "The name of the second private network"
+  type        = string
+}
+
+variable "subnet_name_private_2" {
+  description = "The name of the second private subnet"
+  type        = string
+}
+
+variable "network_name_public" {
+  description = "The name of the public network"
+  type        = string
+}
+
+variable "subnet_name_public" {
+  description = "The name of the public subnet"
+  type        = string
+}
+
 // Variables para configurar los servidores
 variable "server_flavor" {
   description = "The flavor to use for the Puppet server"
   type        = string
-  default     = m1.large
 }
 
 variable "server_image" {
@@ -40,7 +70,6 @@ variable "agent_count" {
 variable "agent_flavor" {
   description = "The flavor to use for the Puppet agents"
   type        = string
-  default     = m1.medium
 }
 
 variable "agent_image" {
@@ -51,7 +80,6 @@ variable "agent_image" {
 variable "db_flavor" {
   description = "The flavor to use for the Puppet DB"
   type        = string
-  default     = m1.medium
 }
 
 variable "db_image" {
