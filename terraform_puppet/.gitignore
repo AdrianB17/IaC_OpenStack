@@ -1,0 +1,16 @@
+# IDES
+.idea
+.vscode
+
+
+# Terraform states
+.terraform*
+terraform.tfstate*
+terraform.tfvars
+
+# dev files
+.env
+backend.hcl
+
+#Webstorm
+.DS_Store
