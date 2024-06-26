@@ -1,0 +1,15 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install Puppet Server
+  apt:
+    name: puppetserver
+    state: present
+
+- name: Start and enable Puppet Server service
+  systemd:
+    name: puppetserver
+    enabled: yes
+    state: started

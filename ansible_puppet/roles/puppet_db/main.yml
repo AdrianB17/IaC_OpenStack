@@ -1,0 +1,21 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install PostgreSQL
+  apt:
+    name: postgresql
+    state: present
+
+- name: Start and enable PostgreSQL service
+  systemd:
+    name: postgresql
+    enabled: yes
+    state: started
+
+- name: Create PuppetDB database
+  become_user: postgres
+  postgresql_db:
+    name: puppetdb
+    state: present

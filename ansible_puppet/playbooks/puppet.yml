@@ -1,0 +1,13 @@
+# Install agent
+- hosts: puppet_agent
+  vars_files:
+    - ../vars/puppet_agent.yml
+  roles:
+    - puppet_agent
+
+# Install server
+- hosts: puppet_server
+  vars_files:
+    - ../vars/puppet_server.yml
+  roles:
+    - puppet_server
