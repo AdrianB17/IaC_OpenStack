@@ -21,7 +21,7 @@ $ vi /ansible/inventory
 Actualizar las variables del rol puppet_server
 
 ```shell
-$ vi /ansible_puppet/roles/puppet_server/defaults/mian.yml
+$ vi /ansible_puppet/roles/puppet_server/defaults/main.yml
 ```
 
 ```ini
@@ -32,4 +32,37 @@ puppet_server_hostname: "puppet"
 puppet_version: 8
 puppet_distribution_release: "focal"
 puppet_server_pkg: "puppetserver"
+```
+Actualizar las variables del rol puppet_agent
+
+```shell
+$ vi /ansible_puppet/roles/puppet_agent/defaults/main.yml
+```
+
+```ini
+---
+# defaults file for puppet_agent
+puppet_server_ip: 10.100.67.16
+puppet_server_hostname: "puppet"
+puppet_version: 8
+puppet_distribution_release: "focal"
+puppet_agent_pkg: "puppet-agent"
+puppet_pkg: "puppet"
+
+```
+Actualizar las variables del rol puppet_db
+
+```shell
+$ vi /ansible_puppet/roles/puppet_db/defaults/main.yml
+```
+
+```ini
+---
+# defaults file for puppet_db
+puppet_server_ip: 10.100.67.16
+puppet_server_hostname: "puppet"
+puppet_version: 8
+puppet_distribution_release: "focal"
+puppet_db_pkg: "puppetdb"
+puppet_pkg: "puppet"
 ```
