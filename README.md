@@ -42,7 +42,7 @@ $ vi /ansible_puppet/roles/puppet_agent/defaults/main.yml
 ```ini
 ---
 # defaults file for puppet_agent
-puppet_server_ip: 10.100.67.16
+puppet_server_ip: <ip_puppet_server>
 puppet_server_hostname: "puppet"
 puppet_version: 8
 puppet_distribution_release: "focal"
@@ -59,7 +59,7 @@ $ vi /ansible_puppet/roles/puppet_db/defaults/main.yml
 ```ini
 ---
 # defaults file for puppet_db
-puppet_server_ip: 10.100.67.16
+puppet_server_ip: <ip_puppet_server>
 puppet_server_hostname: "puppet"
 puppet_version: 8
 puppet_distribution_release: "focal"
