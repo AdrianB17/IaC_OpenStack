@@ -1,0 +1,27 @@
+challenger-12@challenge-3-pivote:~/challenger-12/IaC_OpenStack$ cat terraform_puppet/terraform.tfvars
+auth_url    = "http://10.100.1.31:5000"
+tenant_name = "challenger-##"
+user_name   = "challenger-##"
+password    = ""
+
+key_pair = "challenger-##"
+
+network_name_private_1 = ""
+subnet_name_private_1  = ""
+
+network_name_private_2 = ""
+subnet_name_private_2  = ""
+
+network_name_public = ""
+subnet_name_public  = ""
+
+server_flavor = ""
+server_image  = ""
+
+agent_count   = 2
+agent_flavor  = "m1.medium"
+agent_image   = "Ubuntu 22.04 LTS"
+
+db_flavor = "m1.medium"
+db_image  = "Ubuntu 22.04 LTS"
+
