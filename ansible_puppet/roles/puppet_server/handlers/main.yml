@@ -1,0 +1,6 @@
+---
+# handlers file for puppet_server
+- name: restart puppet server
+  service:
+    name: puppet
+    state: restarted

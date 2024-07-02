@@ -1,0 +1,13 @@
+---
+# defaults file for puppet_db
+puppet_server_ip: 10.100.67.16
+
+puppet_server_hostname: "puppet"
+
+puppet_version: 8
+puppet_distribution_release: "focal"
+
+puppet_db_pkg: "puppetdb"
+puppet_pkg: "puppet"
+
+

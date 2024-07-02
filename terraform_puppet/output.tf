@@ -5,7 +5,7 @@ output "puppet_server_private_ip" {
 
 // Output de la IP pública del servidor Puppet (si se requiere)
 output "puppet_server_public_ip" {
-  value = openstack_compute_instance_v2.puppet_server.network[1].fixed_ip_v4
+  value = openstack_compute_instance_v2.puppet_server.network[0].fixed_ip_v4
 }
 
 // Output de las IPs de los agentes Puppet

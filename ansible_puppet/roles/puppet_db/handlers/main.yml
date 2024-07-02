@@ -1,0 +1,6 @@
+---
+# handlers file for puppet_db
+- name: restart puppet agent
+  service:
+    name: puppet
+    state: restarted

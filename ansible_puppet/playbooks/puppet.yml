@@ -1,13 +1,16 @@
-# Install agent
+# Install server
+- hosts: puppet_server
+  become: yes
+  roles:
+    - puppet_server
+
 - hosts: puppet_agent
-  vars_files:
-    - ../vars/puppet_agent.yml
+  become: yes
   roles:
     - puppet_agent
 
-# Install server
-- hosts: puppet_server
-  vars_files:
-    - ../vars/puppet_server.yml
+- hosts: puppet_db
+  become: yes
   roles:
-    - puppet_server
+    - puppet_db
+

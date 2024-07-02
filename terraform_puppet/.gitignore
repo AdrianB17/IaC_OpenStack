@@ -5,6 +5,7 @@
 
 # Terraform states
 .terraform*
+.main*
 terraform.tfstate*
 terraform.tfvars
 

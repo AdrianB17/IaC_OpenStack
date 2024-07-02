@@ -1,0 +1,28 @@
+---
+- name: "Add temporary record to hosts"
+  lineinfile:
+    state: present
+    path: "/etc/hosts"
+    line : "{{ puppet_server_ip }}\t{{ puppet_server_hostname }}"
+
+- name: Download Puppet release package
+  get_url:
+    url: https://apt.puppet.com/puppet{{ puppet_version }}-release-{{ puppet_distribution_release}}.deb
+    dest: /tmp/puppet8-release-focal.deb
+
+- name: Install Puppet release package
+  command: dpkg -i /tmp/puppet{{ puppet_version }}-release-{{ puppet_distribution_release}}.deb
+
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install Puppet Server
+  apt:
+    name: "{{ puppet_server_pkg }}"
+    state: present
+
+- name: Start Puppet Server
+  systemd:
+    name: "{{ puppet_server_pkg }}"
+    state: started
