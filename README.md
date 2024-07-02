@@ -18,3 +18,18 @@ $ vi /ansible/inventory
 [puppet_db]
 <ip_puppet_db> ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
 ```
+Actualizar las variables del rol puppet_server
+
+```shell
+$ vi /ansible_puppet/roles/puppet_server/defaults/mian.yml
+```
+
+```ini
+---
+# defaults file for puppet_server
+puppet_server_ip: <ip_puppet_server>
+puppet_server_hostname: "puppet"
+puppet_version: 8
+puppet_distribution_release: "focal"
+puppet_server_pkg: "puppetserver"
+```
