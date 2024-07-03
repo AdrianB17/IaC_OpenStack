@@ -4,8 +4,7 @@ La arquitectura cumple con el siguiente criterio de escalabilidad
 ![image](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/a58913b5-fbcc-4aae-b962-b8ccb6e58686)
 
 
-Arquitectura:
-
+Arquitectura
 ![OpenStack drawio (1)](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/450be520-a315-47d1-bf0e-87838b722b21)
 
 
