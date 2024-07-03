@@ -24,17 +24,17 @@ user_name   = "challenger-##"
 password    = ""
 key_pair = "challenger-##"
 
-network_name_private_1 = ""
-subnet_name_private_1  = ""
+network_name_private_1 = "PRIVATE-1"
+subnet_name_private_1  = "private-subnet-1"
 
-network_name_private_2 = ""
-subnet_name_private_2  = ""
+network_name_private_2 = "PRIVATE-2"
+subnet_name_private_2  = "private-subnet-2"
 
-network_name_public = ""
-subnet_name_public  = ""
+network_name_public = "PUBLIC"
+subnet_name_public  = "public-subnet-1"
 
-server_flavor = ""
-server_image  = ""
+server_flavor = "m1.medium"
+server_image  = "Ubuntu 22.04 LTS"
 
 agent_count   = 2
 agent_flavor  = "m1.medium"
