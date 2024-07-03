@@ -4,11 +4,6 @@
 La arquitectura cumple con el siguiente criterio de escalabilidad
 
 | Componente | Estabilidad Vertical | Estabilidad Horizontal |
-|Puppet_server|Si|No|
-|Puppet_server|Si|Si|
-|Puppet_server|Si|No|
-
-| Componente | Estabilidad Vertical | Estabilidad Horizontal |
 |------|---------|---------|
 |Puppet_server|Si|No|
 |Puppet_server|Si|Si|
