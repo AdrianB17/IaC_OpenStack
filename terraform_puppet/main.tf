@@ -22,7 +22,6 @@ resource "openstack_compute_instance_v2" "puppet_server" {
 }
 
 // Instancias de los agentes Puppet
-// Crear una floating IP para Puppet Server
 resource "openstack_networking_floatingip_v2" "floatip_puppet_agent" {
   count = var.agent_count
   pool = "PUBLIC"
