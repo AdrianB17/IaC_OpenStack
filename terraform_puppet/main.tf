@@ -1,3 +1,10 @@
+// Router que conecta la red privada a la red pública
+resource "openstack_networking_router_v2" "router_1" {
+  name                = "router-public-subnet-1"
+  admin_state_up      = true
+  external_network_id = data.openstack_networking_network_v2.public_network.id
+}
+
 // Instancia del servidor Puppet
 resource "openstack_compute_instance_v2" "puppet_server" {
   name            = "puppet-server"
@@ -5,7 +12,7 @@ resource "openstack_compute_instance_v2" "puppet_server" {
   image_name      = var.server_image
   key_pair        = var.key_pair
   security_groups = [
-    openstack_networking_secgroup_v2.puppet_secgroup_ssh.id, 
+    openstack_networking_secgroup_v2.puppet_secgroup_ssh.id,
     openstack_networking_secgroup_v2.puppet_secgroup_port.id
   ]
   // Agregar interfaz de red pública si se requiere acceso público
@@ -15,6 +22,12 @@ resource "openstack_compute_instance_v2" "puppet_server" {
 }
 
 // Instancias de los agentes Puppet
+// Crear una floating IP para Puppet Server
+resource "openstack_networking_floatingip_v2" "floatip_puppet_agent" {
+  count = var.agent_count
+  pool = "PUBLIC"
+}
+
 resource "openstack_compute_instance_v2" "puppet_agent" {
   count           = var.agent_count
   name            = "puppet-agent-${count.index}"
@@ -23,11 +36,22 @@ resource "openstack_compute_instance_v2" "puppet_agent" {
   key_pair        = var.key_pair
   security_groups = [openstack_networking_secgroup_v2.puppet_secgroup_ssh.name]
   network {
-    uuid = data.openstack_networking_network_v2.public_network.id
+    uuid = data.openstack_networking_network_v2.private_network_1.id
   }
 }
 
+resource "openstack_compute_floatingip_associate_v2" "puppet_agent_fip" {
+  count       = var.agent_count
+  floating_ip = openstack_networking_floatingip_v2.floatip_puppet_agent[count.index].address
+  instance_id = openstack_compute_instance_v2.puppet_agent[count.index].id
+}
+
 // Instancia de la base de datos Puppet
+// Crear una floating IP para Puppet Server
+resource "openstack_networking_floatingip_v2" "floatip_puppet_db" {
+  pool = "PUBLIC"
+}
+
 resource "openstack_compute_instance_v2" "puppet_db" {
   name            = "puppet-db"
   flavor_name     = var.db_flavor
@@ -35,8 +59,13 @@ resource "openstack_compute_instance_v2" "puppet_db" {
   key_pair        = var.key_pair
   security_groups = [openstack_networking_secgroup_v2.puppet_secgroup_ssh.name]
   network {
-    uuid = data.openstack_networking_network_v2.public_network.id
+    uuid = data.openstack_networking_network_v2.private_network_1.id
   }
+}
+
+resource "openstack_compute_floatingip_associate_v2" "puppet_db_fip" {
+  floating_ip = openstack_networking_floatingip_v2.floatip_puppet_db.address
+  instance_id = openstack_compute_instance_v2.puppet_db.id
 }
 
 // Grupo de seguridad para las instancias Puppet
@@ -72,3 +101,5 @@ resource "openstack_networking_secgroup_rule_v2" "puppet_secgroup_port" {
   remote_ip_prefix  = "0.0.0.0/0"
   security_group_id = openstack_networking_secgroup_v2.puppet_secgroup_port.id
 }
+
+
