@@ -48,6 +48,16 @@ db_flavor = "m1.medium"
 db_image  = "Ubuntu 22.04 LTS"
 ```
 
+Considerar las siguientes variables:
+
+| Variable | Definicion |
+|------|---------|
+|key_pair|Si|
+|server_flavor|Si|
+|agent_count|Si|
+|agent_flavor|Si|
+|db_flavor|Si|
+
 # Ansible
 Actualizar los ips de los host administrados
 
