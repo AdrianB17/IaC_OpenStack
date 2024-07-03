@@ -6,7 +6,7 @@ La arquitectura cumple con el siguiente criterio de escalabilidad
 | Componente | Estabilidad Vertical | Estabilidad Horizontal |
 | Puppet server| Si | No |
 | Puppet server | Si | Si |
-|Puppet server| Si | No |
+| Puppet server | Si | No |
 
 
 # Arquitectura OpenStack
