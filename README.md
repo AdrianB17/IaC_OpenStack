@@ -52,11 +52,16 @@ Considerar las siguientes variables:
 
 | Variable | Definicion | Nota |
 |------|---------|---------|
-|key_pair|Si|Si|
-|server_flavor|Si|Si|
-|agent_count|Si|Si|
-|agent_flavor|Si|Si|
-|db_flavor|Si|Si|
+|auth_url|URL del servicio de autenticación|Si|
+|tenant_name|Nombre del tenant|Si|
+|key_pair|Nombre del key pair para el acceso SSH|Si|
+|server_flavor|Tamaño de la instancia del servidor|Si|
+|server_image|Imagen del sistema operativo del servidor|Si|
+|agent_count|Número de agentes a desplegar|Si|
+|agent_flavor|Tamaño de la instancia del agente|Si|
+|agent_image|Imagen del sistema operativo del agente	|Si|
+|db_flavor|Tamaño de la instancia de la base de datos|Si|
+|db_image|Imagen del sistema operativo de la base de datos|Si|
 
 # Ansible
 Actualizar los ips de los host administrados
