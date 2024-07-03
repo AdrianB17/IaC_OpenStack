@@ -2,6 +2,7 @@
 
 # Criterio de escalibilidad
 La arquitectura cumple con el siguiente criterio de escalabilidad
+
 | Componente | Estabilidad Vertical | Estabilidad Horizontal |
 | Puppet server| Si | No |
 | Puppet server | Si | Si |
