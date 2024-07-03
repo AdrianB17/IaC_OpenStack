@@ -55,12 +55,12 @@ Considerar las siguientes variables:
 |auth_url|URL del servicio de autenticación||
 |tenant_name|Nombre del tenant||
 |key_pair|Nombre del key pair para el acceso SSH||
-|server_flavor|Tamaño de la instancia del servidor|Horizontal|
+|server_flavor|Tamaño de la instancia del servidor|Vertical|
 |server_image|Imagen del sistema operativo del servidor||
-|agent_count|Número de agentes a desplegar|Vertical|
-|agent_flavor|Tamaño de la instancia del agente|Horizontal|
+|agent_count|Número de agentes a desplegar|Horizontal|
+|agent_flavor|Tamaño de la instancia del agente|Vertical|
 |agent_image|Imagen del sistema operativo del agente	||
-|db_flavor|Tamaño de la instancia de la base de datos|Horizontal|
+|db_flavor|Tamaño de la instancia de la base de datos|Vertical|
 |db_image|Imagen del sistema operativo de la base de datos||
 
 # Ansible
