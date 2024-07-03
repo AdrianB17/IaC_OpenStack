@@ -14,19 +14,34 @@ La arquitectura cuenta con un router para la comunicacion entre la red publica y
 Crear el archivo 'terraform.tfvars', para asignar las variables, el ejemplo se muestra en el archivo 'terraform.tfvars.example'
 
 ```shell
-$ vi /ansible/inventory
+$ vi /terraform_puppet/terraform.tfvars
 ```
 
 ```ini
-[puppet_server]
-<ip_puppet_server>  ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
+auth_url    = "http://10.100.1.31:5000"
+tenant_name = "challenger-##"
+user_name   = "challenger-##"
+password    = ""
+key_pair = "challenger-##"
 
-[puppet_agent]
-<ip_puppet_agent> ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
-<ip_puppet_agent> ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
+network_name_private_1 = ""
+subnet_name_private_1  = ""
 
-[puppet_db]
-<ip_puppet_db> ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
+network_name_private_2 = ""
+subnet_name_private_2  = ""
+
+network_name_public = ""
+subnet_name_public  = ""
+
+server_flavor = ""
+server_image  = ""
+
+agent_count   = 2
+agent_flavor  = "m1.medium"
+agent_image   = "Ubuntu 22.04 LTS"
+
+db_flavor = "m1.medium"
+db_image  = "Ubuntu 22.04 LTS"
 ```
 
 # Ansible
