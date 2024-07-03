@@ -9,6 +9,8 @@ La arquitectura cumple con el siguiente criterio de escalabilidad
 | Puppet server | Si | Si |
 | Puppet server | Si | No |
 
+| Name | Version |
+|------|---------|
 
 # Arquitectura OpenStack
 
