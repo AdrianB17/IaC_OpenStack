@@ -1,5 +1,4 @@
 # IaC_OpenStack
-# Arquitectura OpenStack
 La arquitectura cumple con el siguiente criterio de escalabilidad
 ![image](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/a58913b5-fbcc-4aae-b962-b8ccb6e58686)
 
