@@ -2,11 +2,10 @@
 
 # Criterio de escalibilidad
 La arquitectura cumple con el siguiente criterio de escalabilidad
-| Name | Version | Version |
-|------|---------| ---------|
-| Name | Version | Version |
-|------|---------| Version |
-![image](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/a58913b5-fbcc-4aae-b962-b8ccb6e58686)
+| Componente | Estabilidad Vertical | Estabilidad Horizontal |
+| Puppet server| Si | No |
+| Puppet server | Si | Si |
+|Puppet server| Si | No |
 
 
 # Arquitectura OpenStack
