@@ -10,6 +10,24 @@ La arquitectura cumple con el siguiente criterio de escalabilidad
 La arquitectura cuenta con un router para la comunicacion entre la red publica y privada
 ![OpenStack drawio (1)](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/450be520-a315-47d1-bf0e-87838b722b21)
 
+# Terraform
+Crear el archivo 'terraform.tfvars', para asignar las variables, el ejemplo se muestra en el archivo 'terraform.tfvars.example'
+
+```shell
+$ vi /ansible/inventory
+```
+
+```ini
+[puppet_server]
+<ip_puppet_server>  ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
+
+[puppet_agent]
+<ip_puppet_agent> ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
+<ip_puppet_agent> ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
+
+[puppet_db]
+<ip_puppet_db> ansible_user=ubuntu ansible_ssh_private_key_file=~/challenger-xx.pem
+```
 
 # Ansible
 Actualizar los ips de los host administrados
