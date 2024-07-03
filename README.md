@@ -1,6 +1,11 @@
 # IaC_OpenStack
 # Arquitectura OpenStack
+La arquitectura cumple con el siguiente criterio de escalabilidad
+![requerimineto_openstack](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/2e8b0c43-bca1-4dbb-a266-9d020b0029df)
+
+
 ![OpenStack drawio (1)](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/450be520-a315-47d1-bf0e-87838b722b21)
+
 
 # Ansible
 Actualizar los ips de los host administrados
