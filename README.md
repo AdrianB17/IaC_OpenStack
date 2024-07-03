@@ -8,7 +8,7 @@ La arquitectura cumple con el siguiente criterio de escalabilidad
 |Puppet_server|Si|Si|
 |Puppet_server|Si|No|
 
-| Name | Version |
+| Componente | Estabilidad Vertical |
 |------|---------|
 
 # Arquitectura OpenStack
