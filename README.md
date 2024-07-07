@@ -37,6 +37,21 @@ Terraform es una herramienta de infraestructura como código (IaC) que automatiz
 
 Crear el archivo 'terraform.tfvars', para asignar las variables, el ejemplo se muestra en el archivo 'terraform.tfvars.example'
 
+Modulo Terraform
+
+Un módulo de Terraform se organiza en un conjunto de archivos y directorios que juntos definen una parte específica de la infraestructura.
+```shell
+$ tree /terraform_puppet/
+├── main.tf
+├── data.tf
+├── vars.tf
+├── outputs.tf
+├── providers.tf
+├── terraform.tfvars
+├── providers.tfvars.example
+└── README.md
+```
+
 ```shell
 $ vi /terraform_puppet/terraform.tfvars
 ```
