@@ -14,11 +14,15 @@ Mediante Terraform y Ansible, deberá generar y configurar la infraestructura ne
  
  Por simplicidad, se debe cumplir el siguiente criterio de escalabilidad durante el desarrollo de los módulos de Terraform o playbooks de Ansible:
 
-| Componente | Estabilidad Vertical | Estabilidad Horizontal |
-|------|---------|---------|
-|Puppet_server|Si|No|
-|Puppet_server|Si|Si|
-|Puppet_server|Si|No|
+<div align="center">
+
+| Componente     | Estabilidad Vertical | Estabilidad Horizontal |
+|----------------|----------------------|------------------------|
+| Puppet_server  | Si                   | No                     |
+| Puppet_server  | Si                   | Si                     |
+| Puppet_server  | Si                   | No                     |
+
+</div>
 
 # Arquitectura OpenStack
 
