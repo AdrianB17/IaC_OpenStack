@@ -28,9 +28,7 @@ La arquitectura cuenta con un router para la comunicacion entre la red publica y
 
 ● IP Flotante: Las IPs flotantes se asignan a instancias específicas para hacerlas accesibles desde la red pública. Esto es útil para exponer solo los servicios necesarios a Internet, mientras se mantiene el resto de la infraestructura segura en redes privadas.
 
-```
 IMPORTANTE: Exponer todas las instancias directamente en la red pública aumenta el riesgo de ataques y acceso no autorizado.
-```
 
 # Terraform
 Terraform es una herramienta de infraestructura como código (IaC) que automatiza la creación y configuración de recursos en OpenStack, como redes, subredes, routers, instancias y direcciones IP flotantes, asegurando que tu infraestructura sea creada de manera consistente y reproducible.
@@ -96,9 +94,8 @@ Considerar las siguientes variables:
 |db_flavor|Tamaño de la instancia de la base de datos|Vertical|
 |db_image|Imagen del sistema operativo de la base de datos||
 
-```
 IMPORTANTE: Revisar la documentación par asignar el adecuado flavor(disco y memoria) para cada instancia server, agent y db.
-```
+
 Luego de actulizar mi archivo terraform.tfvars, desplegar mi infraestructura en Openstack con los siguientes comandos:
 
 ```shell
