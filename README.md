@@ -129,3 +129,12 @@ puppet_distribution_release: "focal"
 puppet_db_pkg: "puppetdb"
 puppet_pkg: "puppet"
 ```
+Validar el despliegue de Puppet 
+
+```shell
+ubuntu@puppet-server:~$ sudo /opt/puppetlabs/bin/puppetserver ca list
+Requested Certificates:
+    puppet-agent-0.openstacklocal       (SHA256)  9D:BC:06:A5:40:3C:6E:06:B6:A3:5A:25:01:61:30:82:BF:0A:2E:24:02:08:CF:A1:3F:C1:1F:C2:A6:22:F2:3B
+    puppet-agent-1.openstacklocal       (SHA256)  2F:8F:23:AB:25:71:E9:25:49:AB:88:72:9A:F2:B2:BB:92:1E:75:65:6A:C7:3D:34:2E:B7:BF:B2:8B:26:FE:1E
+    puppet-db.openstacklocal            (SHA256)  AC:FF:F1:05:90:90:5E:4F:1D:B2:A8:39:29:A4:06:5F:DD:BA:FD:F5:90:3E:DF:1C:FD:93:99:A4:5F:80:B5:71
+```
