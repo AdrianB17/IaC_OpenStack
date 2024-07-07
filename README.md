@@ -99,6 +99,17 @@ Considerar las siguientes variables:
 ```
 IMPORTANTE: Revisar la documentación par asignar el adecuado flavor(disco y memoria) para cada instancia server, agent y db.
 ```
+Luego de actulizar mi archivo terraform.tfvars, desplegar mi infraestructura en Openstack con los siguientes comandos:
+
+```shell
+challenger-xx@challenge-3-pivote:~/IaC_OpenStack/terraform_puppet$ terraform init
+```
+```shell
+challenger-xx@challenge-3-pivote:~/IaC_OpenStack/terraform_puppet$ terraform plan
+```
+```shell
+challenger-xx@challenge-3-pivote:~/IaC_OpenStack/terraform_puppet$ terraform apply
+```
 
 # Ansible
 Actualizar los ips de los host administrados
