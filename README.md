@@ -7,7 +7,7 @@ Mediante Terraform y Ansible, deberá generar y configurar la infraestructura ne
 
  ● Una instancia Puppet server
  
- ● Uno o másPuppetagent
+ ● Uno o más Puppet agent
  
  ● Una instancia Puppet DB
  
