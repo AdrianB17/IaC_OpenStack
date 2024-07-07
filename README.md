@@ -98,12 +98,17 @@ IMPORTANTE: Revisar la documentación par asignar el adecuado flavor(disco y mem
 
 Luego de actulizar mi archivo terraform.tfvars, desplegar mi infraestructura en Openstack con los siguientes comandos:
 
+Este comando prepara el directorio de trabajo descargando los proveedores necesarios y configurando el entorno:
 ```shell
 $ terraform init
 ```
+
+Este comando crea un plan de ejecución, mostrando los cambios que Terraform realizará en la infraestructura. Es una buena práctica revisar el plan cuidadosamente antes de aplicar los cambios:
 ```shell
 $ terraform plan
 ```
+
+Aplica el plan guardado para realizar los cambios necesarios en la infraestructura:
 ```shell
 $ terraform apply
 ```
