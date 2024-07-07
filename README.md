@@ -33,6 +33,8 @@ IMPORTANTE: Exponer todas las instancias directamente en la red pública aumenta
 ```
 
 # Terraform
+Terraform es una herramienta de infraestructura como código (IaC) que automatiza la creación y configuración de recursos en OpenStack, como redes, subredes, routers, instancias y direcciones IP flotantes, asegurando que tu infraestructura sea creada de manera consistente y reproducible.
+
 Crear el archivo 'terraform.tfvars', para asignar las variables, el ejemplo se muestra en el archivo 'terraform.tfvars.example'
 
 ```shell
