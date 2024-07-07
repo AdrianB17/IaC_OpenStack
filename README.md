@@ -79,7 +79,9 @@ Considerar las siguientes variables:
 |db_flavor|Tamaño de la instancia de la base de datos|Vertical|
 |db_image|Imagen del sistema operativo de la base de datos||
 
+```
 IMPORTANTE: Revisar la documentación par asignar el adecuado flavor(disco y memoria) para cada instancia server, agent y db.
+```
 
 # Ansible
 Actualizar los ips de los host administrados
