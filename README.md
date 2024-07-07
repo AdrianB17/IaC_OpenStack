@@ -63,7 +63,6 @@ agent_image   = "Ubuntu 22.04 LTS"
 db_flavor = "m1.medium"
 db_image  = "Ubuntu 22.04 LTS"
 ```
-IMPORTANTE: Revisar la documentación par asignar el adecuado flavor(disco y memoria) para cada instancia server, agent y db.
 
 Considerar las siguientes variables:
 
@@ -79,6 +78,8 @@ Considerar las siguientes variables:
 |agent_image|Imagen del sistema operativo del agente	||
 |db_flavor|Tamaño de la instancia de la base de datos|Vertical|
 |db_image|Imagen del sistema operativo de la base de datos||
+
+IMPORTANTE: Revisar la documentación par asignar el adecuado flavor(disco y memoria) para cada instancia server, agent y db.
 
 # Ansible
 Actualizar los ips de los host administrados
