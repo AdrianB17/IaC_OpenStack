@@ -24,6 +24,12 @@ Mediante Terraform y Ansible, deberá generar y configurar la infraestructura ne
 La arquitectura cuenta con un router para la comunicacion entre la red publica y privada
 ![OpenStack drawio (1)](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/450be520-a315-47d1-bf0e-87838b722b21)
 
+● Router: El router se utiliza para conectar las redes privadas con la red pública, permitiendo que el tráfico salga de las redes privadas hacia Internet y viceversa. Esto proporciona una capa de enrutamiento y control del tráfico.
+
+● IP Flotante: Las IPs flotantes se asignan a instancias específicas para hacerlas accesibles desde la red pública. Esto es útil para exponer solo los servicios necesarios a Internet, mientras se mantiene el resto de la infraestructura segura en redes privadas.
+
+IMPORTANTE: Exponer todas las instancias directamente en la red pública aumenta el riesgo de ataques y acceso no autorizado.
+
 # Terraform
 Crear el archivo 'terraform.tfvars', para asignar las variables, el ejemplo se muestra en el archivo 'terraform.tfvars.example'
 
