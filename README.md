@@ -3,7 +3,9 @@
 Mediante Terraform y Ansible, deberá generar y configurar la infraestructura necesaria para desplegar Puppet, el cual estará compuesto por:
 
  ● Una instancia Puppet server
+ 
  ● Uno o másPuppetagent
+ 
  ● Una instancia Puppet DB
  
  Por simplicidad, se debe cumplir el siguiente criterio de escalabilidad durante el desarrollo de los módulos de Terraform o playbooks de Ansible:
