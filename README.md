@@ -1,5 +1,8 @@
 # IaC_OpenStack
 
+Se pretende utilizar Terraform y Ansible para desplegar Puppet dentro de una nube privada basada en OpenStack
+![image](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/998057de-dd05-4555-8827-677787f39fe2)
+
 Mediante Terraform y Ansible, deberá generar y configurar la infraestructura necesaria para desplegar Puppet, el cual estará compuesto por:
 
  ● Una instancia Puppet server
@@ -9,10 +12,6 @@ Mediante Terraform y Ansible, deberá generar y configurar la infraestructura ne
  ● Una instancia Puppet DB
  
  Por simplicidad, se debe cumplir el siguiente criterio de escalabilidad durante el desarrollo de los módulos de Terraform o playbooks de Ansible:
-
-La arquitectura cumple con el siguiente criterio de escalabilidad:
-![image](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/998057de-dd05-4555-8827-677787f39fe2)
-
 
 | Componente | Estabilidad Vertical | Estabilidad Horizontal |
 |------|---------|---------|
