@@ -28,7 +28,9 @@ La arquitectura cuenta con un router para la comunicacion entre la red publica y
 
 ● IP Flotante: Las IPs flotantes se asignan a instancias específicas para hacerlas accesibles desde la red pública. Esto es útil para exponer solo los servicios necesarios a Internet, mientras se mantiene el resto de la infraestructura segura en redes privadas.
 
+```
 IMPORTANTE: Exponer todas las instancias directamente en la red pública aumenta el riesgo de ataques y acceso no autorizado.
+```
 
 # Terraform
 Crear el archivo 'terraform.tfvars', para asignar las variables, el ejemplo se muestra en el archivo 'terraform.tfvars.example'
