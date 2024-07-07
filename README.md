@@ -11,6 +11,8 @@ Mediante Terraform y Ansible, deberá generar y configurar la infraestructura ne
  Por simplicidad, se debe cumplir el siguiente criterio de escalabilidad durante el desarrollo de los módulos de Terraform o playbooks de Ansible:
 
 La arquitectura cumple con el siguiente criterio de escalabilidad:
+![image](https://github.com/AdrianB17/IaC_OpenStack/assets/97138609/998057de-dd05-4555-8827-677787f39fe2)
+
 
 | Componente | Estabilidad Vertical | Estabilidad Horizontal |
 |------|---------|---------|
