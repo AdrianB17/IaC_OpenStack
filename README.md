@@ -4,15 +4,12 @@ Nos enfocamos en el uso de herramientas de infraestructura/configuración como c
 
 Por simplicidad, se debe cumplir el siguiente criterio de escalabilidad durante el desarrollo de los módulos de Terraform o playbooks de Ansible:
 
-<div align="center">
-
 | Componente     | Estabilidad Vertical | Estabilidad Horizontal |
 |----------------|----------------------|------------------------|
 | Puppet_server  | Si                   | No                     |
 | Puppet_server  | Si                   | Si                     |
 | Puppet_server  | Si                   | No                     |
 
-</div>
 
 Mediante Terraform y Ansible, deberá generar y configurar la infraestructura necesaria para desplegar Puppet, el cual estará compuesto por:
  
