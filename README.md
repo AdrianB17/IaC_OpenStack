@@ -97,6 +97,8 @@ Considerar las siguientes variables:
 
 IMPORTANTE: Revisar la documentación par asignar el adecuado flavor(disco y memoria) para cada instancia server, agent y db.
 
+__Despliegue__
+
 Luego de actulizar mi archivo terraform.tfvars, desplegar mi infraestructura en Openstack con los siguientes comandos:
 
 Este comando prepara el directorio de trabajo descargando los proveedores necesarios y configurando el entorno:
