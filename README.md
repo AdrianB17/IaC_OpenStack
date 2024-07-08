@@ -124,6 +124,7 @@ Ansible es una herramienta de automatización de TI que se utiliza para la confi
 Ansible puede automatizar la configuración de los servidores Puppet DB y Puppet Agents, asegurando que todos los nodos estén configurados de manera consistente y según los estándares requeridos.
 
 __Configuración__
+
 Actualizar los ips de los host administrados
 
 ```shell
