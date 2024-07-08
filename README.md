@@ -196,7 +196,7 @@ __Ejecución playbook__
 Luego de actulizar el inventory y variables, ejecutar el rol playbook:
 
 ```shell
-challenger-xx@challenge-3-pivote:~/IaC_OpenStack/ansible_puppet$ ansible-playbook -i inventory playbooks/puppet.yml
+$ ansible-playbook -i inventory playbooks/puppet.yml
 ```
 
 __Validar__
