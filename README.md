@@ -191,6 +191,7 @@ puppet_pkg: "puppet"
 ```
 
 __Ejecución playbook__
+
 Luego de actulizar el inventory y variables, ejecutar el rol playbook:
 
 ```shell
@@ -198,6 +199,7 @@ challenger-xx@challenge-3-pivote:~/IaC_OpenStack/ansible_puppet$ ansible-playboo
 ```
 
 __Validar__
+
 Validar el despliegue de Puppet 
 
 ```shell
