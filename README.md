@@ -48,6 +48,9 @@ $ tree /terraform_puppet/
 ├── providers.tfvars.example
 └── README.md
 ```
+
+__Configuración__
+
 Crear el archivo 'terraform.tfvars', para asignar las variables, el ejemplo se muestra en el archivo 'terraform.tfvars.example'
 ```shell
 $ vi /terraform_puppet/terraform.tfvars
@@ -120,6 +123,7 @@ $ terraform apply
 Ansible es una herramienta de automatización de TI que se utiliza para la configuración de sistemas, la gestión de aplicaciones y la orquestación de tareas complejas.
 Ansible puede automatizar la configuración de los servidores Puppet DB y Puppet Agents, asegurando que todos los nodos estén configurados de manera consistente y según los estándares requeridos.
 
+__Configuración__
 Actualizar los ips de los host administrados
 
 ```shell
