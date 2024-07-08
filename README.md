@@ -189,12 +189,15 @@ puppet_distribution_release: "focal"
 puppet_db_pkg: "puppetdb"
 puppet_pkg: "puppet"
 ```
+
+__Ejecución playbook__
 Luego de actulizar el inventory y variables, ejecutar el rol playbook:
 
 ```shell
 challenger-xx@challenge-3-pivote:~/IaC_OpenStack/ansible_puppet$ ansible-playbook -i inventory playbooks/puppet.yml
 ```
 
+__Validar__
 Validar el despliegue de Puppet 
 
 ```shell
