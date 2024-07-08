@@ -117,6 +117,9 @@ $ terraform apply
 ```
 
 # Ansible
+Ansible es una herramienta de automatización de TI que se utiliza para la configuración de sistemas, la gestión de aplicaciones y la orquestación de tareas complejas.
+Ansible puede automatizar la configuración de los servidores Puppet DB y Puppet Agents, asegurando que todos los nodos estén configurados de manera consistente y según los estándares requeridos.
+
 Actualizar los ips de los host administrados
 
 ```shell
